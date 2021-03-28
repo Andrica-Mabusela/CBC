@@ -1,0 +1,132 @@
+body{
+	background: lightgrey;
+	width: 100vw;
+	height: 100vh;
+	margin-right: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+#wrapper{
+	/*margin: 0 50px;*/
+	width: 370px;
+	max-width: 80%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: white;
+}
+#wrapper img{
+	width: 80px;
+	height: 80px;
+}
+#wrapper form{
+	padding: 20px;
+}
+#wrapper form label{
+	font-size: 1.1em;
+	font-weight: bold;
+	display: flex;
+	justify-content: space-between;
+}
+
+#wrapper form label span:nth-child(2){
+	margin-right: 20px;
+	background-color: lightgrey;
+	width: 25px;
+	height: 25px;
+	border-radius: 20px;
+	font-size: 16px;
+	text-align: center;
+}
+
+#wrapper .btn-lg{
+	background-color: lightgrey;
+	transition: background-color 1.2s ease-in-out, color 0.8s ease-in-out;
+}
+#wrapper .btn-lg:hover{
+	background-color: lime;
+	color: white;
+}
+
+#wrapper p{
+	text-align: center;
+}
+
+#wrapper p a{
+	font-size: 20px;
+	color: green;
+	margin-left: 5px;
+	text-decoration: none;
+}
+[data-tooltip]{
+	position: relative;
+	background-color: lightgrey;
+	transition:background-color 1s ease-in-out;
+}
+#password-label:hover::before{
+	content: attr(data-tooltip);
+	border: 1px solid lightgrey;
+	border-radius: 10px;
+	background-color: lightgrey;
+	box-shadow: 2px 2px 2px darkgrey;
+	position: absolute;
+	top: -100%;
+	left: 50%;
+	transform: translate(-50%, -80%);
+	width: 200px;
+	height: 90px;
+	text-align: center;
+	font-size: 14px;
+	font-weight: lighter;
+}
+
+#username-label:hover::before{
+	content: attr(data-tooltip);
+	border: 1px solid lightgrey;
+	border-radius: 10px;
+	background-color: lightgrey;
+	box-shadow: 2px 2px 2px darkgrey;
+	position: absolute;
+	top: -100%;
+	left: 50%;
+	transform: translate(-50%, -75%);
+	width: 200px;
+	height: 70px;
+	text-align: center;
+	font-size: 14px;
+	font-weight: lighter;
+}
+
+
+@media (max-width: 500px){
+
+	body{
+		padding-right: 20px;
+	}
+
+	#username-label:hover::before{
+	position: absolute;
+	top: -100%;
+	left: 50%;
+	transform: translate(-50%, -80%);
+	width: 170px;
+	height: 85px;
+	font-size: 14px;
+	margin-right: 50px;
+}
+
+#password-label:hover::before{
+	position: absolute;
+	top: -100%;
+	left: 40%;
+	transform: translate(-50%, -85%);
+	width: 180px;
+	height: 90px;
+	font-size: 14px;
+	margin-right: 50px;
+}
+
+
+/*end of media query*/
+}

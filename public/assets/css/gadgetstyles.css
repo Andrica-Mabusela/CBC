@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+#gadget-section-wrapper ul li a{
+    color: orange;
+}
+#gadget-section-wrapper ul li{
+    border-bottom: 0px solid transparent;
+    font-weight: bold;
+    padding: 10px;
+    font-size: 1.1em;
+    transition: all 0.3s ease-in;
+}
+
+#gadget-section-wrapper ul li:hover{
+    /* border-bottom: 4px solid rgb(80, 80, 218); */
+    border-bottom: 3px solid rgb(243, 163, 15);
+}
+
+#first_top_header_menu{
+list-style: none;
+}
+#first_top_header_menu li a{
+margin: 10px;
+padding: 10px;
+text-decoration: none;
+color: orangered;
+}
+#first_top_header_menu li:nth-child(2){
+border-left: 1px solid gray;
+}
+
+#top_header .fab{
+font-size: 1.4em;
+margin: 10px;
+color:grey;
+transition: all 0.3s linear;
+}
+#top_header .fab:hover{
+color: orangered;
+}
+#top_header #login_link{
+border: 1px solid transparent;
+border-left-color: gray;
+padding: 10px;
+text-decoration: none;
+color: orangered;
+}
+.navbar-brand img{
+width: 70px;
+height: 70px;
+}
+.navbar-brand span{
+font-size: 1.4em;
+}
+.navbar .navbar-nav .nav-link{
+font-family: "Josefin Sans",sans-serif;
+font-weight: 600;
+color: #141517;
+transition: all 0.2s linear;
+}
+.navbar .navbar-nav .nav-link:hover{
+color: orangered;
+}
+
+.navbar-form{
+margin-top: 20px;
+}
+
+
+
+#gadget-section-wrapper ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+#gadget-section-wrapper ul li{
+    margin: 10px;
+}
+#gadget-section-wrapper ul li a{
+    text-decoration: none;
+}
+#gadget-section{
+    flex-wrap: wrap;
+}
+#gadget-section .card{
+    flex-basis: 200px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    margin: 10px;
+    max-width: 280px;
+}
+#gadget-section .card img{
+    width: 100%;
+    height: 200px;
+}
+
+#gadget-section .card a{
+    color: black;
+    text-decoration: none;
+    border: 0px solid transparent;
+    outline: none;
+}
+#gadget-section .card i{
+    cursor: pointer;
+    margin-left: 4px;
+    margin-right: 2px;
+    transition: all .3s ease-out;
+}
+#gadget-section .card i:hover{
+    font-size: 1.2em;
+} 
+
+
+/* FOOTER STYLES  */
+#footer-wrapper{
+    width: 100%;
+    background-color: #F3F6FA;
+}
+footer{
+    background-color: #F3F6FA;
+}
+footer img{
+    width: 80px;
+    height: 80px;
+}
+footer .row div{
+    margin-top: 2rem;
+}
+footer .row div h5{
+    font-family: "Roboto",sans-serif;
+    font-weight: 700;
+}
+footer .row div ul{
+    list-style: none;
+}
+footer .row div ul li{
+    margin-top: 15px;
+}
+footer .row div ul a{
+    color: #868c98;
+    font-weight: 600;
+    font-size: 1.1em;
+    text-decoration: none;
+    transition: all 0.2s linear;
+}
+footer .row div ul a:hover{
+    color: orangered;
+    font-weight: 800;
+}
+footer .row div:first-child span{
+    font-size: 1.5em;
+    font-weight: bold;
+}

@@ -1,0 +1,20 @@
+#login-wrapper, #register-wrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background-color: rgb(0, 0, 0, .03);
+    border-radius: 5px;
+}
+#register-header span, #login-header span{
+    font-size: 25px;
+    font-weight: bold;
+}
+#register-header img, #login-header img{
+    width: 50px;
+    height: 50px;
+}
+#login-wrapper h3, #register-wrapper h3{
+    color: orangered;
+}
